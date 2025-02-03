@@ -1,0 +1,76 @@
+/* Personalizações adicionais, se necessário */
+body {
+	background-color: #f8f9fa;
+	background-color: aqua;
+}
+
+.header h1 {
+	font-size: 2rem; /* Ajuste o tamanho do texto conforme necessário */
+}
+
+.card {
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Regras de @media para ajustes específicos */
+@media (max-width: 576px) {
+	.header h1 {
+		font-size: 1.5rem; /* Reduz o tamanho do texto em telas pequenas */
+	}
+
+	.card {
+		padding: 1rem; /* Reduz o padding em telas pequenas */
+	}
+}
+
+.btn-custom {
+	background-color: #5664f5;
+	border-color: #5664f5;
+	color: white; /* Cor do texto */
+}
+
+.btn-custom:hover {
+	background-color: #454fd1; /* Cor mais escura no hover */
+	border-color: #454fd1;
+}
+
+/* teste de container */
+.container {
+	width: 100%;
+	max-width: 400px; /* Largura máxima para celular */
+	padding: 20px;
+	background-color: rgb(255, 255, 255); /* Fundo branco para o conteúdo */
+	border-radius: 20px; /* Bordas arredondadas */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    
+}
+
+/* div do formulario */
+.form_container {
+    height: auto;
+    width: auto;
+    background-color: #d6d6da;
+    padding: 30px;
+    
+}
+.form-container .btn-custom {
+	background-color: #5664f5;
+	border-color: #5664f5;
+	color: white;
+}
+
+.form-container .btn-custom:hover {
+	background-color: #454fd1;
+	border-color: #454fd1;
+}
+
+/* Ajustes para o link "Esqueceu a senha?" */
+.form-container a.text-primary {
+	color: #5664f5 !important; /* Cor personalizada para o link */
+}
+
+/* Ajustes para o texto "Ou" */
+.form-container .text-center {
+	color: #666; /* Cor mais suave para o texto "Ou" */
+}
+
