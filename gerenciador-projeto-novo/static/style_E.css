@@ -1,0 +1,29 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.btn-custom {
+    background-color: #5664f5;
+    border-color: #5664f5;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #454fd1;
+    border-color: #454fd1;
+}
+
+@media (max-width: 576px) {
+    .card {
+        padding: 1rem;
+    }
+    
+    .btn-custom {
+        font-size: 0.9rem;
+    }
+}

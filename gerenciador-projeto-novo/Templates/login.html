@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> 
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +8,11 @@
     <link rel="stylesheet" href="/gerenciador-projeto-novo/static/style.css">
 </head>
 <body>
-    <div class="container d-flex justify-content-center align-items-center vh-100">
-        <div class="card p-4 border border-2 border-dark" style="max-width: 400px; width: 100%;">
-            <!-- Local para o header -->
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="card p-4 border border-2 border-dark shadow-sm" style="max-width: 400px; width: 100%;">
             <div id="header"></div>
-           
-            <div class="form_container">   <!-- Inicio do fundo do Formulario -->
+            
+            <div class="form_container">
                 <form>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
@@ -26,21 +25,17 @@
                     <a href="#" class="d-block mb-3 text-primary text-decoration-none">Esqueceu a senha?</a>
                     <button type="submit" class="btn btn-primary w-100">Login</button>
                 </form>
-                <hr id="barra">
+                <hr>
                 <div class="text-center my-3">Ou</div>
                 <button class="btn btn-custom w-100 mb-2">Google</button>
                 <button class="btn btn-custom w-100">Facebook</button>
             </div>
             
-            <!-- Local para o footer -->
             <div id="footer"></div>
         </div>
     </div>
 
-    
-    
     <script>
-        // Função para carregar um arquivo HTML em um elemento
         function loadHTML(elementId, file) {
             fetch(file)
                 .then(response => response.text())
@@ -50,11 +45,8 @@
                 .catch(error => console.error('Erro ao carregar o arquivo:', error));
         }
 
-        // Carregar header e footer
         loadHTML('header', '/gerenciador-projeto-novo/fragment/header.html');
         loadHTML('footer', '/gerenciador-projeto-novo/fragment/footer.html');
     </script>
-
-    
 </body>
 </html>

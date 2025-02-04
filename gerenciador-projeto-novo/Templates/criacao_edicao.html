@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação e Edição - TASKVEGA</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/gerenciador-projeto-novo/static/style_E.css">
+</head>
+<body>
+    <div id="header"></div>
+    
+    <div class="container my-4">
+        <div class="card p-4 border border-2 border-dark shadow-sm">
+            <h2 class="text-center mb-3">Criação e Edição</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite o nome">
+                </div>
+                <div class="mb-3">
+                    <label for="descricao" class="form-label">Descrição</label>
+                    <textarea class="form-control" id="descricao" rows="3" placeholder="Digite a descrição"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Data</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="MM/DD/YYYY">
+                        <span class="input-group-text">📅</span>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Ordem</label>
+                    <div>
+                        <input type="radio" name="ordem" id="alto"> <label for="alto">Alto</label>
+                        <input type="radio" name="ordem" id="medio"> <label for="medio">Médio</label>
+                        <input type="radio" name="ordem" id="baixo"> <label for="baixo">Baixo</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">MiniTarefas</label>
+                    <input type="text" class="form-control mb-2" placeholder="Tarefa 1">
+                    <input type="text" class="form-control mb-2" placeholder="Tarefa 2">
+                    <input type="text" class="form-control" placeholder="Tarefa 3">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Anexos</label>
+                    <button class="btn btn-custom w-100">Adicionar Arquivo</button>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Salvar</button>
+            </form>
+        </div>
+    </div>
+    
+    <div id="footer"></div>
+    
+    <script>
+        function loadHTML(elementId, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                })
+                .catch(error => console.error('Erro ao carregar o arquivo:', error));
+        }
+
+        loadHTML('header', '/gerenciador-projeto-novo/fragment/header.html');
+        loadHTML('footer', '/gerenciador-projeto-novo/fragment/footer.html');
+    </script>
+</body>
+</html>
