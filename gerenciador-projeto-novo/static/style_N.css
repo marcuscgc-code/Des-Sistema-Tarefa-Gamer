@@ -1,0 +1,18 @@
+/* Estilos personalizados */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .progress-bar {
+    background-color: #28a745; /* Verde */
+  }
+  
+  .bi {
+    color: #007bff; /* Azul */
+  }
+  
+  .card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
