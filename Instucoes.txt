@@ -1,0 +1,138 @@
+Objetivo Principal:
+
+Criar um sistema de gestão de tarefas que utilize gamificação (pontos, níveis, desafios, recompensas) para motivar os usuários a serem mais produtivos.
+
+Funcionalidades Chave:
+
+Cadastro e login.
+
+Criação, edição e organização de tarefas.
+
+Sistema de pontuação, níveis e recompensas.
+
+Desafios e conquistas.
+
+Integração com calendários externos.
+
+Relatórios de desempenho (ou dashboard).
+
+Tecnologias:
+
+Frontend: HTML, CSS, Vue.js.
+
+Backend: Django (para API e lógica de negócio).
+
+Design:
+
+Interface colorida, com elementos visuais e sonoros para engajar o usuário.
+
+Foco em usabilidade e acessibilidade.
+
+Guia de Fluxo de Telas:
+1. Tela de Boas-Vindas (Welcome Screen):
+Descrição: Tela inicial que apresenta o aplicativo e suas funcionalidades.
+
+Elementos:
+
+Logo do aplicativo.
+
+Botões: "Login" e "Cadastro".
+
+Imagem ou animação ilustrativa.
+
+2. Tela de Login/Cadastro:
+Descrição: Permite que o usuário faça login ou crie uma nova conta.
+
+Elementos:
+
+Campos: E-mail, senha.
+
+Botões: "Entrar", "Cadastrar", "Login com Redes Sociais".
+
+Link: "Esqueci minha senha".
+
+3. Dashboard (Tela Principal):
+Descrição: Tela central do aplicativo, onde o usuário visualiza suas tarefas, progresso e conquistas.
+
+Elementos:
+
+Menu lateral ou superior com opções: "Tarefas", "Projetos", "Desafios", "Perfil".
+
+Resumo do progresso: Pontuação atual, nível, próximas recompensas.
+
+Lista de tarefas pendentes (com opções de filtro por data, prioridade, etc.).
+
+Gráficos ou cards com estatísticas (tarefas concluídas, tempo gasto, etc.).
+
+4. Tela de Criação/Edição de Tarefas:
+Descrição: Permite ao usuário criar ou editar uma tarefa.
+
+Elementos:
+
+Campos: Título, descrição, data de vencimento, prioridade.
+
+Opções: Adicionar subtarefas, anexar arquivos.
+
+Botões: "Salvar", "Cancelar".
+
+5. Tela de Organização de Tarefas:
+Descrição: Permite ao usuário organizar tarefas em projetos ou categorias.
+
+Elementos:
+
+Lista de projetos/categorias.
+
+Opção de arrastar e soltar tarefas entre projetos.
+
+Botão: "Criar Novo Projeto".
+
+6. Tela de Desafios e Conquistas:
+Descrição: Mostra os desafios ativos e as conquistas alcançadas.
+
+Elementos:
+
+Lista de desafios (diários, semanais, mensais).
+
+Barra de progresso para cada desafio.
+
+Lista de conquistas desbloqueadas.
+
+7. Tela de Perfil do Usuário:
+Descrição: Permite ao usuário visualizar e editar seu perfil.
+
+Elementos:
+
+Avatar personalizável.
+
+Informações: Nome, e-mail, nível atual, pontuação.
+
+Botões: "Editar Perfil", "Alterar Senha".
+
+8. Tela de Configurações:
+Descrição: Permite ao usuário configurar preferências e integrações.
+
+Elementos:
+
+Opções: Notificações, integração com calendários (Google Calendar, Outlook).
+
+Botão: "Salvar Configurações".
+
+9. Tela de Relatórios/Dashboard Analítico:
+Descrição: Mostra relatórios detalhados sobre o desempenho do usuário.
+
+Elementos:
+
+Gráficos: Tarefas concluídas por dia/semana/mês.
+
+Estatísticas: Tempo gasto, progresso nos níveis.
+
+Botão: "Exportar Relatório".
+
+Fluxo de Navegação:
+Usuário não autenticado:
+
+Tela de Boas-Vindas → Tela de Login/Cadastro → Dashboard.
+
+Usuário autenticado:
+
+Dashboard → Tela de Tarefas → Tela de Desafios → Tela de Perfil → Tela de Configurações.
